@@ -10,7 +10,7 @@ Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the 
 
 ### Add Items to the Shelf (Create)
 
-[] The Shelf page (`ShelfPage.js` at `/shelf`) should allow a user to add a new item to the database (which should immediately appear in the list). **Users must be logged in to add an item to the shelf.**
+[✅] The Shelf page (`ShelfPage.js` at `/shelf`) should allow a user to add a new item to the database (which should immediately appear in the list). **Users must be logged in to add an item to the shelf.**
 
 > NOTE: Image url should be a full path to an existing image on the web. You should not attempt to implement image upload for this.
 
