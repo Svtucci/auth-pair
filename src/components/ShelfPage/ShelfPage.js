@@ -22,16 +22,18 @@ function ShelfPage() {
       alert('Something went wrong.');
     });
   }
+
+// Delete 
 const deleteItem = (id) => {
   axios.delete(`/api/shelf/${id}`).then ((response) => {
     fetchShelf();
   }).catch((error) =>{
-    
+    console.log(error);
     alert('Something went wrong.');
   });
 }
   
-// Add Shelf ()
+// Add 
 const addShelf =(event) => {
   event.preventDefault();
   const newItem ={ 
@@ -73,7 +75,7 @@ const addShelf =(event) => {
                         <br />
                         <div className="desc">{item.description}</div>
                         <div style={{textAlign: 'center', padding: '5px'}}>
-                          <button  onClick=></div> style={{cursor: 'pointer'}}>Delete</button>
+                          <button  onClick={() => deleteItem(item.id)} style={{cursor: 'pointer'}}>Delete</button>
                         </div>
                     </div>
                  </div>

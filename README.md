@@ -16,9 +16,9 @@ Our client, Prime Digital Academy: Room 2, has asked for an app to simulate the 
 
 ### Delete Items from the Shelf (Delete)
 
-[] An authenticated user should be able to delete items from the shelf.
+[✅] An authenticated user should be able to delete items from the shelf.
 
-## Stretch Goals
+## Stretch Goals🛸 
 
 - Below each item, display the name of the user who added the item to the shelf. This will require an SQL JOIN in your GET route.
 - Only display the delete button if the logged in user was the one who added the item. Protect your server route using `req.user.id` in your delete query to ensure the logged in users can only delete items they added.
